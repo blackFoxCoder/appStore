@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Develop New Apps</title>
+	<style type="text/css"> @import url(appStore.css)</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Work</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">Careers</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<table id="table">
+			<tr>
+				<td><input onclick="app1()" style="background-color: purple" type="button" value="Web"></td>
+				<td><input onclick="app2()" style="background-color: orange" type="button" value="iOS"></td>
+				<td><input onclick="app3()" style="background-color: green" type="button" value="Android"></td>
+			</tr>
+			<tr class="quest"><td colspan="3">1. What is the size of your app</td></tr>
+			<tr>
+				<td><button onclick="select(Small App)">S</button></td>
+				<td><button>M</button></td>
+				<td><button>L</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">2. What level of UI would you like?</td></tr>
+			<tr>
+				<td><button onclick="mvp()">MVP</button></td>
+				<td><button onclick="basic()">Basic</button></td>
+				<td><button onclick="polished()">Polished</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">3. Users & Accounts</td></tr>
+			<tr class="row">
+				<td><button onclick="button(150)">Email/Password Sign Up</button></td>
+				<td><button onclick="button(125)">Linkdin Sign Up</button></td>
+				<td><button onclick="button(90)">Subdomains</button></td>
+			</tr>
+			<tr class="row">
+				<td><button onclick="button(30)">Facebook Sign Up</button></td>
+				<td><button onclick="button(40)">Github Sign Up</button></td>
+				<td><button onclick="button(75)">Custom Domains</button></td>
+			</tr>
+			<tr class="row">
+				<td><button onclick="button(50)">Twitter Sign Up</button></td>
+				<td><button onclick="button(50)">User Invitation Emails</button></td>
+				<td><button onclick="button(50)">Instagram Sign Up</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(120)">Google Sign Up</button></td>
+				<td><button onclick="button(80)">Multi-tenant Accounts</button></td>
+				<td><button onclick="button(10)">Social Accounts</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">4. User Generated Content</td></tr>
+			<tr class="row">
+				<td><button onclick="button(160)">Dashboard</button></td>
+				<td><button onclick="button(130)">Transactional Emails</button></td>
+				<td><button onclick="button(120)">Free-text searching</button></td>
+			</tr>
+			<tr class="row">
+				<td><button onclick="button(170)">Activity Feed</button></td>
+				<td><button onclick="button(350)">Tags</button></td>
+				<td><button onclick="button(50)">Shares</button></td>
+			</tr>
+			<tr class="row">
+				<td><button onclick="button(30)">File Uploading</button></td>
+				<td><button onclick="button(40)">Ratings or Reviews</button></td>
+				<td><button onclick="button(90)">Likes</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(30)">User Profiles</button></td>
+				<td><button onclick="button(70)">Audio/Video processing</button></td>
+				<td><button onclick="button(80)">Saved Contents</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">5. Dates & Locations</td></tr>
+			<tr class="row">
+				<td><button onclick="button(90)">Calendering</button></td>
+				<td><button onclick="button(70)">Display of Map data/Geolocation</button></td>
+				<td><button onclick="button(125)">Display of custom map markers/regions</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(115)">Bookings</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">6. Social & Engagement</td></tr>
+			<tr class="row">
+				<td><button onclick="button(80)">Messaging</button></td>
+				<td><button onclick="button(60)">Forums or Commenting</button></td>
+				<td><button onclick="button(90)">Social Sharing</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(70)">Push to Facebook Open Graph</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">6. Billing & eCommerce</td></tr>
+			<tr class="row">
+				<td><button onclick="button(160)">Subscription Plans</button></td>
+				<td><button onclick="button(60)">Product Management</button></td>
+				<td><button onclick="button(20)">Payment Processing</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(20)">Shopping Cart</button></td>
+				<td><button onclick="button(130)">User Market Place</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">8. Admin, Feedback & Analytics</td></tr>
+			<tr class="row">
+				<td><button onclick="button(120)">CMS Integration</button></td>
+				<td><button onclick="button(750)">Usage Analytics</button></td>
+				<td><button onclick="button(900)">User Admin Pages</button></td>
+			</tr>
+			<tr class="row">
+				<td><button onclick="button(89)">Crash Reporting</button></td>
+				<td><button onclick="button(75)">Moderation/ Content Approval</button></td>
+				<td><button onclick="button(100)">Performance Monitoring</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(90)">Intercom</button></td>
+				<td><button onclick="button(70)">Multilingual Support</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">9. External API's and Integrations</td></tr>
+			<tr class="row">
+				<td><button onclick="button(800)">Connect to One or More 3rd Party Services</button></td>
+				<td><button onclick="button(700)">An API for others to integrate with your App</button></td>
+				<td><button onclick="button(500)">SMS Messaging</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="button(70)">Phone Number Masking</button></td>
+			</tr>
+			<tr class="quest"><td colspan="3">10. Security</td></tr>
+			<tr>
+				<td><button onclick="button(40)">SSL Certificate based Security</button></td>
+				<td><button onclick="button(50)">DoS protection</button></td>
+				<td><button onclick="button(60)">Two Factor Authentication</button></td>
+			</tr>
+			<tr>
+				<td bgcolor="purple">Need a Web App?</td>
+				<td bgcolor="orange">Need an iOS App?</td>
+				<td bgcolor="green">Need an Android App?</td>
+			</tr>
+		</table>
+	</div>
+	<div style="font-size: 3em" align="center"> Total Cost : $<span id="result">0</span></div>
+		<div>
+			Based on appStore rates. To use your own rates, click Show Calculations above.
+		</div>
+	</div>
+	<script type="text/javascript" src="appStore.js"></script>
+</body>
+</html>
